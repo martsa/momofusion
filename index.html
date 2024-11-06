@@ -18,8 +18,8 @@
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             overflow: hidden;
         }
 
@@ -59,6 +59,17 @@
         .content p {
             font-size: 1.2em;
         }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 7px;
+            font-size: 0.6em;
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +77,13 @@
     <div class="background"></div>
 
     <!-- Content to display on top of the background -->
-   
+    <div class="content">
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Momo Fusion Bowl. All rights reserved ™
+    </footer>
 </body>
 </html>
