@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momo Fusion Bowl</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-screen styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Default background for portrait mode */
+        .background {
+            background-image: url('fusuion5-2.png'); /* Change to your portrait image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Landscape background */
+        @media (orientation: landscape) {
+            .background {
+                background-image: url('landsscape1-2.png'); /* Change to your landscape image */
+            }
+        }
+
+        /* Content styling */
+        .content {
+            flex: 1; /* Takes up available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            text-align: center;
+            color: white;
+            z-index: 1; /* Ensure content is above background */
+        }
+
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content .btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            text-transform: uppercase;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .content .btn:hover {
+            background-color: #cc7a00;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 7px;
+            font-size: 0.6em;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Image Div -->
+    <div class="background"></div>
+
+    <!-- Content to display on top of the background -->
+    <div class="content">
+        <h1>Welcome to Momo Fusion Bowl</h1>
+        <p>Experience the perfect blend of Tibetan momos and Chinese cuisine, crafted with love and fresh, seasonal ingredients.</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        ©2025 Momo Fusion Bowl. ™ info@momofusionbowl.com
+    </footer>
+</body>
+</html>
