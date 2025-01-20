@@ -64,7 +64,7 @@
         }
 
         .content p {
-            font-size: 1em;
+            font-size: .8em;
             background: rgba(0, 0, 0, 0.4);
             padding: 10px 15px;
             border-radius: 10px;
@@ -73,9 +73,15 @@
 
         }
 
-        .content .btn {
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px; /* Add spacing above the footer */
+        }
+
+        .btn {
             padding: 10px 20px;
-            font-size: 1em;
+            font-size: .7em;
             text-transform: uppercase;
             background-color: #ff9900;
             color: white;
@@ -86,7 +92,7 @@
             transition: background-color 0.3s ease;
         }
 
-        .content .btn:hover {
+        .btn:hover {
             background-color: #cc7a00;
         }
 
@@ -109,6 +115,10 @@
     <!-- Content to display on top of the background -->
     <div class="content">
         <p>Unser Momo-Fusion-Menü kombiniert chinesisches Chow Mein und gebratenen Reis mit tibetischen Momos für ein einzigartiges Geschmackserlebnis. Wählen Sie zwischen vegetarischen oder nicht-vegetarischen Momos und saisonalen Toppings – stets frisch und von höchster Qualität, verfeinert mit unserer köstlichen Signature-Soße.</p>
+    </div>
+
+    <!-- Home Button Container -->
+    <div class="btn-container">
         <a href="index.html" class="btn">Home</a>
     </div>
 
