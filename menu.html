@@ -72,11 +72,17 @@
             margin-top: 30px;
 
         }
-         /* Adjust margin for landscape orientation */
-    @media (orientation: landscape) {
+       /* Adjust margins for landscape using aspect ratio */
+    @media screen and (min-aspect-ratio: 4/3) {
         .content p {
-            margin-top: 20px; /* Example margin for landscape mode */
-            margin-bottom: 10px; /* Example margin for landscape mode */
+            margin: 50px 10px; /* Landscape-specific margins */
+        }
+    }
+
+    /* Optional: fallback for portrait using aspect ratio */
+    @media screen and (max-aspect-ratio: 4/3) {
+        .content p {
+            margin: 30px 10px; /* Portrait-specific margins */
         }
     }
 
